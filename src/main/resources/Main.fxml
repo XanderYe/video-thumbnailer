@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.xanderye.controller.MainController">
+   <children>
+      <Button layoutX="417.0" layoutY="26.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="25.0" text="选择" />
+      <TextField fx:id="filePathText" editable="false" layoutX="115.0" layoutY="26.0" prefHeight="25.0" prefWidth="280.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="16.0" layoutY="26.0" prefHeight="25.0" prefWidth="80.0" text="视频路径：" />
+      <Label alignment="CENTER_RIGHT" layoutX="16.0" layoutY="66.0" prefHeight="25.0" prefWidth="80.0" text="输出文件夹：" />
+      <TextField fx:id="outputPathText" editable="false" layoutX="115.0" layoutY="66.0" prefHeight="25.0" prefWidth="280.0" />
+      <Button layoutX="417.0" layoutY="66.0" mnemonicParsing="false" onAction="#chooseOutput" prefHeight="25.0" text="选择" />
+      <Label alignment="CENTER_RIGHT" layoutX="16.0" layoutY="105.0" prefHeight="25.0" prefWidth="80.0" text="图片宽度：" />
+      <Label alignment="CENTER_RIGHT" layoutX="196.0" layoutY="105.0" prefHeight="25.0" prefWidth="80.0" text="图片数量：" />
+      <TextField fx:id="widthText" layoutX="115.0" layoutY="105.0" prefHeight="25.0" prefWidth="69.0" text="850" />
+      <TextField fx:id="rowText" layoutX="290.0" layoutY="105.0" prefHeight="25.0" prefWidth="40.0" text="3" />
+      <Label alignment="CENTER" layoutX="330.0" layoutY="105.0" prefHeight="25.0" prefWidth="25.0" text="X" />
+      <TextField fx:id="colText" layoutX="355.0" layoutY="105.0" prefHeight="25.0" prefWidth="40.0" text="3" />
+      <Button fx:id="genBtn" layoutX="377.0" layoutY="225.0" mnemonicParsing="false" onAction="#generate" prefHeight="41.0" prefWidth="80.0" text="生成" />
+   </children>
+</AnchorPane>
