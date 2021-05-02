@@ -125,7 +125,7 @@ public class SystemUtil {
     }
 
     public static void execVcsi(Progress progress, String filePath, String outputPath, String width, String row, String col) {
-        String cmd = "vcsi.exe \"${videoPath}\" -t -w ${width} -g ${row}x${col} --end-delay-percent 20 --metadata-font msyh.ttf --timestamp-font msyh.ttf -o \"${outputPath}/${fileName}.png\"";
+        String cmd = "vcsi.exe \"${videoPath}\" -t -w ${width} -g ${row}x${col} --end-delay-percent 20 --metadata-font \"C:\\Windows\\Fonts\\msyh.ttc\" --timestamp-font msyh.ttf -o \"${outputPath}/${fileName}.png\"";
         cmd = cmd.replace("${videoPath}", filePath)
                 .replace("${outputPath}", outputPath)
                 .replace("${width}", width)
